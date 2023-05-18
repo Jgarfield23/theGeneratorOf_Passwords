@@ -10,6 +10,7 @@ For challenge 03, we were prompted to create a random password generator using J
 
 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+ The following image's demonstrates the web application's appearance:
 
-   
+    ![password generator screensho1] (./assets/images/screenshot1.png)
+    ![password generator screenshot2] (./assets/images/screenshot2.png)
