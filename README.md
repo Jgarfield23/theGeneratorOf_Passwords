@@ -12,5 +12,5 @@ For challenge 03, we were prompted to create a random password generator using J
 
  The following image's demonstrates the web application's appearance:
 
-    ![password generator screensho1] (./assets/images/screenshot1.png)
+    ![password generator screenshot1] (./assets/images/screenshot1.png)
     ![password generator screenshot2] (./assets/images/screenshot2.png)
