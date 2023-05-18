@@ -10,11 +10,11 @@ let charTotal = [];
 
 var generateBtn = document.querySelector("#generate");
 
-
+generateBtn.addEventListener("click",writePassword) ;
   
   
  
-generateBtn.addEventListener("click",writePassword()) ;
+
 
 // Write password to the #password input
 function writePassword() {
@@ -30,6 +30,8 @@ function writePassword() {
     passwordText.value = "";
   }
 
+
+  
 }
 
 
@@ -37,7 +39,7 @@ function writePassword() {
 
 function generatePassword() {
   var newPassword = "";
-  for(var i = 0; i < passwordLength; 1++) {
+  for(var i = 0; i < passwordLength; i++) {
     var randomValue = Math.floor(Math.random() * charTotal.length);
     newPassword = newPassword + charTotal[randomValue];
   }
@@ -57,21 +59,23 @@ function userPrompt(){
   }
   if (confirm("Will your password include uppercase letters?")) {
 
-  charTotal = charTotal + upperCase;
+  charTotal = charTotal.concat(upperCase);
   } 
   if (confirm("Will your password include lowercase letters?")) {
 
-   charTotal = charTotal + lowerCase;
+   charTotal = charTotal.concat(lowerCase);
   }
   if (confirm("Will your password include special characters letters?")) {
 
-    charTotal = charTotal + specialChar;
+    charTotal = charTotal.concat(specialChar);
   }
   if (confirm("Will your password include numbers?")) {
 
-    charTotal = charTotal + numbers;
+    charTotal = charTotal.concat(numbers);
   }
-  return true; 
+  return true;
+  
+ 
 }
 
 
